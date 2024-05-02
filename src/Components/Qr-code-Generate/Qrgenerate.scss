@@ -1,0 +1,95 @@
+/* Importing variables for colors, etc. */
+@import "../../assets/css/variable";
+
+.Qr-icon {
+   
+    .icon-display-section1 {
+        height: 4.5rem;
+        width: 35rem;
+        background-color: $primary;
+        margin-top: -2rem;
+        
+        h4 {
+            text-align: center;
+            color: white;
+            font-size: 1.5rem; /* Adjust font size based on screen width */
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            margin-top: -1.5rem;
+            font-size: 1rem; /* Adjust font size based on screen width */
+        }
+    }
+
+    /* Second section: QR code and image */
+    .icon-display-section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items in flexbox */
+
+        section {
+            display: flex;
+            flex-direction: column; /* Ensure child items stack */
+            align-items: center; /* Center the child items */
+            
+            /* Image styles */
+            img {
+                height: 5rem;
+                width: auto; /* Maintain aspect ratio */
+            }
+
+            /* QR code */
+            .Qr-icon-show {
+                size: 170; /* Adjust as needed */
+            }
+
+            /* Text below the QR code */
+            p {
+                text-align: center;
+                margin-top: -0.1rem;
+                font-size: 1rem; /* Adjust font size */
+            }
+        }
+    }
+}
+
+/* Styles for the download button */
+.Qr-btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjustments for small screens */
+    .Qr-icon .icon-display-section1 {
+        height: auto; /* Let the height adjust naturally */
+    
+        h4 {
+            font-size: 1.25rem; /* Smaller font size */
+        }
+
+        p {
+            font-size: 0.875rem; /* Smaller font size */
+        }
+    }
+
+    .Qr-icon .icon-display-section2 {
+        
+        section {
+            img {
+                height: 4rem;
+            }
+
+            .Qr-icon-show {
+                size: 150; 
+            }
+
+            p {
+                font-size: 0.875rem; 
+            }
+        }
+    }
+}

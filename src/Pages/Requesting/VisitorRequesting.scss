@@ -1,0 +1,74 @@
+@import "../../../src/assets/css/variable";
+$green: green;
+$red: red;
+$blue: blue;
+.visitor-layout-conatiner{
+    .visitor-request-header{
+        text-align: center;
+        .header-span{
+            font-size: 2rem;
+            font-weight: 700;
+            color: $visitor;
+        }
+    }
+.visitor-request-container {
+    height: auto; 
+    display: grid;
+    grid: repeat(3, 80px) ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem; 
+    justify-content: center;
+    padding: 2rem; 
+    
+    .visitor-layout {
+        height: auto;
+        width: 100%; 
+        border-radius: 18px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem; // Add padding to layout
+        
+        .accept-icon, .reject-icon, .reschedule-icon {
+            text-align: center;
+            font-size: 2rem; 
+            margin-bottom: 1rem; 
+        }
+        
+        .accept-icon { color: $green; }
+        .reject-icon { color: $red; }
+        .reschedule-icon { color: $blue; }
+        
+        h2, h6 {
+            text-align: center;
+            margin-bottom: 1rem; 
+        }
+        
+        .visitor-btn2, .visitor-btn3, .visitor-btn4 {
+            width: 100%; 
+            height: 2.3rem;
+            border-radius: 15px;
+            margin-top: 1rem;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        
+        .visitor-btn2 { background-color: $green; }
+        .visitor-btn3 { background-color: $red; }
+        .visitor-btn4 { background-color: $blue; }
+        .visitor-btn2:hover{background-color: rgb(80, 131, 3);}
+    }
+}
+    // Media query for smaller screens (e.g., mobile)
+    @media (max-width: 768px) {
+        .visitor-layout {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+             // Adjust max width for smaller screens
+        }
+    }
+}

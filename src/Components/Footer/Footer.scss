@@ -1,0 +1,34 @@
+@import '../../assets/css/variable';
+.section{
+    border-radius: 15px;
+    border: 2px solid $primary;
+    h1{
+        padding:0 5rem
+    }
+  .section-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    section{
+        color:$primary;
+        img{
+            height: 20rem;
+        }
+        h3{
+            text-align: center;
+        }
+        ul{
+            list-style-type: none;
+            
+            li{
+                
+                padding: 0.5rem;
+                  font-size: 1rem;
+            }
+        }
+    }
+  }
+  p{
+    text-align: center;
+  }
+}

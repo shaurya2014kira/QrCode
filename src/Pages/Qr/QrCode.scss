@@ -1,0 +1,26 @@
+.Qr-Menu{
+    display: flex;
+    justify-content: space-between;
+    .Qr-div-1{
+        width: 22%;
+    }
+    .Qr-div-2{
+        width: 75%;
+       
+        .section-1{
+            border-bottom: 2px solid grey ;
+        }
+        .section-2{
+            display: flex;
+            justify-content: space-between;
+            .section-input{
+                border-right: 1px solid grey;
+            }
+            .section-qr{
+                margin-top: 0.5rem;
+            }
+            
+        }
+
+    }
+}

@@ -1,0 +1,76 @@
+.Visitor {
+    // General styles
+   
+    
+  .vistor-header{
+    text-align: center;
+    
+    .visitor-alph{
+        font-size: 2.5rem;
+        color: rgb(252, 131, 131);
+
+    }
+  }
+  
+    p {
+      text-align: center;
+      
+      color: rgb(151, 241, 205);
+    }
+  
+    .Visitor-image-capture {
+      width: 27%;
+      margin: 0 auto;
+  
+      .webcam-container {
+        // Styles for webcam container
+      }
+  
+      .capture-button {
+        // Styles for capture button
+      }
+    }
+  
+    .capture-icon {
+      height: 5rem;
+      margin: 1rem;
+      display: flex;
+      justify-content: center;
+  
+      .capture-tag {
+        // Styles for capture tag
+      }
+  
+      .icons {
+        // Styles for icons
+      
+       .logo{
+        padding-left: 30px;
+        border: 1px solid red;
+    
+       
+       }
+      }
+    }
+  
+    .dynamic-form {
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+   
+      width: 100%;
+     
+    }
+  
+    // Media queries for responsiveness
+    @media screen and (max-width: 768px) {
+      .Visitor {
+       display: flex;
+       justify-content: center;
+        .dynamic-form {
+          height: auto; // Adjust height for smaller screens
+        }
+      }
+    }
+  }
+  

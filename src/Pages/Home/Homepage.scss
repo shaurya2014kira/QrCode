@@ -1,0 +1,87 @@
+@import "../../assets/css/variable";
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+
+    .column1{
+        width: 40%;
+        h1{
+          color:$primary;
+          
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .column2{
+        img{
+            height: 30rem;
+        }
+    }
+    
+}
+.section1{
+    background-color: $primary;
+    border-radius: 15px;
+    ul{
+    display: flex;
+    justify-content: center;
+    li{
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    }
+    h3{
+        text-align: center;
+    }
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    h2{
+        text-align: center;
+        span{
+            color: $primary;
+        }
+    }
+}
+.section3{
+    display: flex;
+    justify-content: space-evenly;
+    section{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 16rem;
+        span{
+            padding-top: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+            color: $primary;
+        }
+    }
+}
+.section4{
+    text-align: center;
+   
+    h3{
+        color: $primary;
+        font-size: 2rem;
+    }
+   
+    .section4-div{
+    display: flex;
+    color: $primary;
+    justify-content: space-evenly;
+    section{
+        padding-top: 2rem;
+        width: 8rem;
+    }
+    }
+}
